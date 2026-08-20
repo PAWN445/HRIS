@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main {
+    min-height: 100vh;
+    transition: transform 0.3s ease;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+
+.navbar  {
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.user{
+    display: flex;
+    gap: 20px;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.notification-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: rgb(229, 229, 230);
+    border-radius: 10%;
+    margin: 2px;
+    padding: 2px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.input-search{
+    width: 280px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.hamburger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 22px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    border-right: 1px solid #ddd;
+}
+
+
+.sidebar-header{
+    display: flex;
+    justify-content: center;
+}
+
+.close {
+    padding: 20px;
+    background-color: rgb(143, 6, 6);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.list{
+    padding: 20px;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.list li i {
+    width: 20px;
+    text-align: center;
+}
+
+.dashboard-head {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.dates{
+    display: flex;
+    flex-direction: column;
+}
+
+.total-employee{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.present-today{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.on-leave{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.payroll-this-month{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.employee-icon, .present-icon, .leave-icon, .payroll-icon{
+    border-radius: 10px;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    background-color: rgb(239, 241, 241);
+    padding: 20px;
+}
+
+i{
+    width: auto;
+}
+
+.dashboard-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.employees-canvas{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+}
+
+.employees-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leave-request-table{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+}
+
+.leave-data{
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+.leave-request-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leave-view-all{
+    text-decoration: none;
+    color: rgb(9, 103, 180);
+}
+
+.leave-item {
+    display: grid;
+    grid-template-columns: 50px 1.5fr 1fr 100px;
+    align-items: center;
+    column-gap: 15px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.leave-item:last-child {
+    border-bottom: none;
+}
+
+.leave-item img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.recent-employee-name {
+    margin: auto;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 30%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 25%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 25%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 20%;
+}
+
+thead{
+    background-color: #ddd;
+    border-radius: 20%;
+}
+
+tbody, td {
+    padding: 20px 15px !important;
+}
+
+
+tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+.list li.active {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border-left: 4px solid rgb(143, 6, 6);
+    padding-left: 16px;
+}
