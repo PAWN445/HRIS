@@ -219,7 +219,7 @@ html, body {
     flex-direction: row;
 }
 
-.employee-icon, .present-icon, .leave-icon, .payroll-icon, .new-icon{
+.employee-icon, .present-icon, .leave-icon, .payroll-icon, .new-icon, .reject-icon{
     border-radius: 10px;
     font-size: 20px;
     width: auto;
@@ -1106,4 +1106,24 @@ tbody tr:not(:last-child) td {
     height: 3px;
     background-color: #0f5132; /* Green active line */
     border-radius: 2px 2px 0 0;
+}
+
+.dashboard-info-recruitment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.reject-this-month{
+    border-radius: 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }

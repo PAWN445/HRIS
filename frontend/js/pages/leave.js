@@ -33,7 +33,7 @@ content.innerHTML += `
             </div>
             <div class="on-leave">
             <div class="leave-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="fa-solid fa-calendar"></i>
             </div>
             <div class="leave-text">
                 <p>Approved Requests</p>
@@ -43,7 +43,7 @@ content.innerHTML += `
             </div>
             <div class="new-this-month">
             <div class="new-icon">
-                <i class="fa fa-user-plus"></i>
+                <i class="fa-solid fa-user-plus"></i>
             </div>
             <div class="new-text">
                 <p>Reject Requests</p>

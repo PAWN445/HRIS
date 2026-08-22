@@ -33,7 +33,7 @@ content.innerHTML += `
             </div>
             <div class="on-leave">
             <div class="leave-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="fa-solid fa-calendar"></i>
             </div>
             <div class="leave-text">
                 <p>On Leave</p>

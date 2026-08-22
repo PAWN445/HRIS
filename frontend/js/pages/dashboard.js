@@ -33,7 +33,7 @@ export function renderDashboard(){
             </div>
             <div class="present-today">
             <div class="present-icon">
-                <i class="fa fa-calendar-check-o"></i>
+                <i class="fa-solid fa-calendar-check"></i>
             </div>
             <div class="present-text">
                 <p>Present Today</p>
@@ -53,7 +53,7 @@ export function renderDashboard(){
             </div>
             <div class="payroll-this-month">
             <div class="payroll-icon">
-                <i class="fa fa-money"></i>
+                <i class="fa-solid fa-money-bill"></i>
             </div>
             <div class="payroll-text">
                 <p>Payroll This Month</p>
